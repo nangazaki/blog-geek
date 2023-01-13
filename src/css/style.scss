@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './sass/partials/cores';
+@import './sass/partials/tipografia';
+@import './sass/partials/hank';
+
+body {
+    width: 100%;
+    background-color: #050607;
+    color: #f2f2f2;
+    font-family: 'Ubuntu'
+}
+
+
+@import './sass/partials/layout';
+
+section {
+    padding: 48px 0;
+}
