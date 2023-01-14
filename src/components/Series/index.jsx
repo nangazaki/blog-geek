@@ -1,9 +1,15 @@
+import CardPost from "../CardPost"
 
 const Series = () => {
     return (
-        <>
-            <h1>Series</h1>
-        </>
+        <section className="container">
+            <h2>Series</h2>
+            <div className="series">
+                <CardPost />
+                <CardPost />
+                <CardPost />
+            </div>
+        </section>
     )
 }
 

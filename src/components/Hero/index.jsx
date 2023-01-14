@@ -37,7 +37,7 @@ const Hero = () => {
                         <img src={posts[0].capa} alt={posts[0].título} />
                         <div className="descricao">
                             <a href="" className="tag">{posts[0].categoria}</a>
-                            <h2 className="">{posts[0].título}</h2>
+                            <h3 className="">{posts[0].título}</h3>
                         </div>
                     </article>
                 </div>
@@ -49,7 +49,7 @@ const Hero = () => {
                         <div className="descricao">
                             <a href="" className="tag">{posts[1].categoria}</a>
                             <div>
-                                <h2 className="">{posts[1].título}</h2>
+                                <h3 className="">{posts[1].título}</h3>
                             </div>
                         </div>
                     </article>
@@ -59,7 +59,7 @@ const Hero = () => {
                         <div className="descricao">
                             <a href="" className="tag">{posts[2].categoria}</a>
                             <div>
-                                <h2 className="">{posts[2].título}</h2>
+                                <h3 className="">{posts[2].título}</h3>
                             </div>
                         </div>
                     </article>

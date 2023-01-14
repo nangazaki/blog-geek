@@ -1,9 +1,14 @@
+import CardJogos from "../CardJogos"
 
 const Jogos = () => {
     return (
-        <>
-            <h1>Jogos</h1>
-        </>
+        <section className="container">
+            <h2>Jogos</h2>
+            <div className="jogos">
+                <CardJogos />
+                <CardJogos />
+            </div>
+        </section>
     )
 }
 

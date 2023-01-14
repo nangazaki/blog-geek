@@ -1,9 +1,15 @@
+import CardPost from "../CardPost"
 
 const Animes = () => {
     return (
-        <>
-            <h1>Animes</h1>
-        </>
+        <section className="container">
+            <h2>Animes</h2>
+            <div className="animes">
+                <CardPost />
+                <CardPost />
+                <CardPost />
+            </div>
+        </section>
     )
 }
 
