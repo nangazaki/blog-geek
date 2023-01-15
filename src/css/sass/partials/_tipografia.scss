@@ -29,26 +29,3 @@ h6 {
     font-size: em($size);
     line-height: em($size * 1.1);
 }
-
-@mixin type-4($size) {
-    font-family: $font-bold;
-
-    @if $size==20 {
-        font-size: em(20);
-        line-height: em(30);
-    }
-
-    @else if $size==24 {
-        font-size: em(24);
-        line-height: em(30);
-    }
-
-    @else if $size==36 {
-        font-size: em(36);
-    }
-
-    @else if $size==48 {
-        font-size: em(48);
-        font-weight: em(52);
-    }
-}

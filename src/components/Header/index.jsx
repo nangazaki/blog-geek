@@ -8,6 +8,8 @@ const Header = () => {
         <div className="logo">
           <a href="/"> <img src={logo} alt="" /> </a>
         </div>
+        <div className="menuMobile">
+        </div>
         <ul className="menu">
           <li><a href="">Página Inicial</a></li>
           <li><a href="">Animes</a></li>
