@@ -57,9 +57,9 @@
     },
     {
       "id": 6,
-      "titulo": "",
-      "descricao": "",
-      "capa": "",
+      "titulo": "Quer um conselho? Assista a série Não Fale com Estranhos",
+      "descricao": "Alguns conselhos são clássicos, “não aceite doces na rua”, “leve um casaco”, “cuidado com as redes sociais” e “não fale com estranhos”.",
+      "capa": "https://static.wixstatic.com/media/276b31_dd34044fec824415a54541c3929885f9~mv2.jpg",
       "categoria": "",
       "autor": "Nangazaki44",
       "destaque": true,
@@ -68,8 +68,8 @@
     },
     {
       "id": 7,
-      "titulo": "",
-      "descricao": "",
+      "titulo": "Filmes e séries para quem gosta de escrever",
+      "descricao": "Pode parecer conversa afiada, mas quando falamos em livros e filmes falamos de duas maneiras muito parecidas de contar histórias. Mas o processo de criação de um livro ou de um filme são...",
       "capa": "",
       "categoria": "",
       "autor": "",
