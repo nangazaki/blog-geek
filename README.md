@@ -1,2 +1,2 @@
 # Blog Geek
-<img src="./src/assets/Blog-Geek.png" />
+<img src="./src/assets/preview.png" />
