@@ -163,6 +163,16 @@ img {
   border-radius: 4px;
 }
 
+::-moz-selection {
+  background-color: #2895E2;
+  color: #F8F8F8;
+}
+
+::selection {
+  background-color: #2895E2;
+  color: #F8F8F8;
+}
+
 body {
   width: 100%;
   background-color: #050607;
@@ -209,6 +219,9 @@ h2 {
   overflow: hidden;
   background-color: rgba(24, 24, 24, 0.0823529412);
 }
+.card-post img {
+  height: 220px;
+}
 .card-post .detalhes {
   padding: 16px;
 }
@@ -216,6 +229,7 @@ h2 {
   font-family: "Rubik";
   font-size: 1.375em;
   line-height: 1.5125em;
+  line-height: 130%;
   margin-bottom: 14px;
 }
 .card-post .detalhes p {
@@ -317,7 +331,8 @@ header .menu a:hover {
   font-family: "Rubik";
   font-size: 1.5em;
   line-height: 1.65em;
-  margin-top: 8px;
+  line-height: 130%;
+  margin-top: 24px;
 }
 .hero img {
   -o-object-fit: cover;
@@ -369,6 +384,7 @@ header .menu a:hover {
 .filmes,
 .jogos,
 .series {
+  margin-top: 16px;
   margin-bottom: 80px;
   display: flex;
   gap: 24px;

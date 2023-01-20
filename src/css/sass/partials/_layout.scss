@@ -31,12 +31,17 @@
     overflow: hidden;
     background-color: #18181815;
 
+    img {
+        height: 220px;
+    }
+
     .detalhes {
         padding: 16px;
 
 
         h3 {
             @include type-2(22);
+            line-height: 130%;
             margin-bottom: 14px;
         }
 
@@ -139,7 +144,8 @@ header {
 
         h3 {
             @include type-2(24);
-            margin-top: 8px;
+            line-height: 130%;
+            margin-top:24px;
         }
     }
 
@@ -196,6 +202,7 @@ header {
 .filmes,
 .jogos,
 .series {
+    margin-top: 16px;
     margin-bottom: 80px;
     display: flex;
     gap: 24px;

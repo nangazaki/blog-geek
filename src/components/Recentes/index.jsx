@@ -1,16 +1,17 @@
 import CardPost from "../CardPost"
 
-const Recentes = () => {
+const Recentes = ({ recentesPosts }) => {
     return (
         <section className="container">
-            <h2>Mais recentes</h2>
+            <h2>Notícias recentes</h2>
             <div className="recentes">
-                <CardPost />
-                <CardPost />
-                <CardPost />
-                <CardPost />
-                <CardPost />
-                <CardPost />
+                {recentesPosts.map((post, index) => {
+                    return (
+                        <>
+                            <CardPost post={post} key={index} />
+                        </>
+                    )
+                })}
             </div>
         </section>
     )

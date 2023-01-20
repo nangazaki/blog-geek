@@ -1,32 +1,5 @@
 
-const Hero = () => {
-    const posts = [{
-        "id": 1,
-        "título": "One Punch Man: 3ª Temporada",
-        "descrição": "",
-        "capa": "https://img.ibxk.com.br/2020/02/17/17152824558257.jpg",
-        "categoria": "Filmes",
-        "autor": "Nangazaki44",
-        "destaque": true
-    },
-    {
-        "id": 2,
-        "título": "O que esperar da 3T de One Punch Man",
-        "descrição": "",
-        "capa": "https://img.ibxk.com.br/2020/02/17/17152824558257.jpg",
-        "categoria": "Animes",
-        "autor": "Nangazaki44",
-        "destaque": true
-    },
-    {
-        "id": 3,
-        "título": "Saiba como Avatar 2 vai revolucionar o cinema",
-        "descrição": "",
-        "capa": "https://w0.peakpx.com/wallpaper/280/328/HD-wallpaper-avatar-2-movie.jpg",
-        "categoria": "Filmes",
-        "autor": "Nangazaki44",
-        "destaque": true
-    }]
+const Hero = ({heroPosts}) => {
 
     return (
         <section className="container">
@@ -34,10 +7,10 @@ const Hero = () => {
                 <div className="hero-1">
                     <article>
                         <div className="gradient"></div>
-                        <img src={posts[0].capa} alt={posts[0].título} />
+                        <img src={heroPosts[0].capa} alt={heroPosts[0].titulo} />
                         <div className="descricao">
-                            <a href="" className="tag">{posts[0].categoria}</a>
-                            <h3 className="">{posts[0].título}</h3>
+                            <a href="" className="tag">{heroPosts[0].categoria}</a>
+                            <h3 className="">{heroPosts[0].titulo}</h3>
                         </div>
                     </article>
                 </div>
@@ -45,21 +18,21 @@ const Hero = () => {
                 <div className="hero-2">
                     <article>
                         <div className="gradient"></div>
-                        <img src={posts[1].capa} alt={posts[1].título} />
+                        <img src={heroPosts[1].capa} alt={heroPosts[1].titulo} />
                         <div className="descricao">
-                            <a href="" className="tag">{posts[1].categoria}</a>
+                            <a href="" className="tag">{heroPosts[1].categoria}</a>
                             <div>
-                                <h3 className="">{posts[1].título}</h3>
+                                <h3 className="">{heroPosts[1].titulo}</h3>
                             </div>
                         </div>
                     </article>
                     <article>
                         <div className="gradient"></div>
-                        <img src={posts[2].capa} alt={posts[2].título} />
+                        <img src={heroPosts[2].capa} alt={heroPosts[2].titulo} />
                         <div className="descricao">
-                            <a href="" className="tag">{posts[2].categoria}</a>
+                            <a href="" className="tag">{heroPosts[2].categoria}</a>
                             <div>
-                                <h3 className="">{posts[2].título}</h3>
+                                <h3 className="">{heroPosts[2].titulo}</h3>
                             </div>
                         </div>
                     </article>
@@ -67,6 +40,7 @@ const Hero = () => {
             </div>
         </section>
     );
+
 }
 
 export default Hero;

@@ -1,17 +1,14 @@
 
-
 const CardPost = (props) => {
-    
-    const img = "https://iuricode-naped.vercel.app/4.webp";
 
     return (
         <div className="card-post">
             <div className="">
-                <img src={img} />
+                <img src={props.post.capa} alt={props.post.titulo} />
             </div>
             <div className="detalhes">
-                <h3>Exemplo de título de postagem exemplo de título</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus...</p>
+                <h3>{props.post.titulo}</h3>
+                <p>{props.post.descricao}</p>
                 <a href="">Ler mais &gt; </a>
             </div>
         </div>

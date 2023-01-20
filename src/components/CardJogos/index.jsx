@@ -1,14 +1,14 @@
 
-const CardJogos = () => {
+const CardJogos = ({post}) => {
 
     const img = "https://iuricode-naped.vercel.app/4.webp";
 
     return (
         <div className="card-jogos">
             <div className="gradient"></div>
-            <img src={img} alt="" />
+            <img src={post.capa} alt="" />
             <div className="detalhes">
-                <h3>Exemplo de título de postagem exemplo de título</h3>
+                <h3>{post.titulo}</h3>
             </div>
         </div>
     );

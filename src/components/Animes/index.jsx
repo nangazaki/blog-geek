@@ -1,13 +1,17 @@
 import CardPost from "../CardPost"
 
-const Animes = () => {
+const Animes = ({ animesPosts }) => {
     return (
         <section className="container">
             <h2>Animes</h2>
             <div className="animes">
-                <CardPost />
-                <CardPost />
-                <CardPost />
+                {animesPosts.map((post, index) => {
+                    return (
+                        <>
+                            <CardPost post={post} key={index} />
+                        </>
+                    )
+                })}
             </div>
         </section>
     )
