@@ -284,29 +284,29 @@ h2 {
   }
 }
 
-header {
+.header {
   height: 80px;
   align-items: center;
   border-bottom: 1px solid #424242;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
-header nav {
+.header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .menu {
+.header .menu {
   display: flex;
   gap: 14px;
 }
-header .menu a {
+.header .menu a {
   font-family: "Rubik";
   font-size: 1.125em;
   line-height: 1.2375em;
   padding: 6px;
   transition: 0.4s ease-in;
 }
-header .menu a:hover {
+.header .menu a:hover {
   color: #1DA7EA;
 }
 
@@ -392,6 +392,41 @@ header .menu a:hover {
   justify-content: space-around;
 }
 
+.postagem {
+  max-width: 900px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.postagem header {
+  margin-bottom: 32px;
+}
+.postagem header h1 {
+  font-family: "Rubik";
+  font-size: 2.25em;
+  line-height: 2.475em;
+  line-height: 110%;
+  color: #F8F8F8;
+  margin-bottom: 40px;
+}
+.postagem header .data {
+  color: #ABABAB;
+}
+.postagem .imagem {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1DA7EA;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.postagem .corpo p {
+  color: #ABABAB;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1.575em;
+  margin-bottom: 16px;
+}
 .newsletter {
   display: flex;
   flex-direction: row;

@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
-import Header from "./components/Header"
+import { Header } from "./components/Header"
 
 import Inicio from "./pages/Inicio"
 import Animes from "./pages/Animes"
@@ -14,16 +14,14 @@ function App() {
   return (
     <>
       <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Inicio />}/>
-          <Route path="/categoria/animes" element={<Animes />} />
-          <Route path="/categoria/filmes" element={<Filmes />} />
-          <Route path="/categoria/jogos" element={<Jogos />} />
-          <Route path="/categoria/series" element={<Series />} />
-          <Route path="/post/:title" element={<PostView />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/categoria/animes" element={<Animes />} />
+        <Route path="/categoria/filmes" element={<Filmes />} />
+        <Route path="/categoria/jogos" element={<Jogos />} />
+        <Route path="/categoria/series" element={<Series />} />
+        <Route path="/post/:id/:title" element={<PostView />} />
+      </Routes>
     </>
   )
 }

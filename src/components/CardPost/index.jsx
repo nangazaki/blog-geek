@@ -1,15 +1,20 @@
+import { Link } from "react-router-dom";
 
-const CardPost = (props) => {
+const CardPost = ({ post }) => {
+
+    const link = post.titulo.toLowerCase().replace(/[ ]+/g, '-')
 
     return (
         <div className="card-post">
             <div className="">
-                <img src={props.post.capa} alt={props.post.titulo} />
+                <img src={post.capa} alt={post.titulo} />
             </div>
             <div className="detalhes">
-                <h3>{props.post.titulo}</h3>
-                <p>{props.post.descricao}</p>
-                <a href="">Ler mais &gt; </a>
+                <Link to={`post/${post.id}/${link}`}>
+                    <h3>{post.titulo}</h3>
+                </Link>
+                <p>{post.descricao}</p>
+                <Link to={`post/${post.id}/${link}`}>Ler mais &gt; </Link>
             </div>
         </div>
     );

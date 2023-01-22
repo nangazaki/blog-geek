@@ -40,7 +40,7 @@ const Inicio = () => {
 
   setTimeout(() => {
     setVisible(true)
-  }, 500)
+  }, 1000)
 
 
   return (

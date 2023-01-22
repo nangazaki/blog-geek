@@ -1,25 +1,24 @@
 
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg"
 
-const Header = () => {
+export const Header = () => {
   return (
-    <header className="full flex">
+    <header>
+    <div className="full flex header">
       <nav className="container">
         <div className="logo">
           <a href="/"> <img src={logo} alt="" /> </a>
         </div>
-        <div className="menuMobile">
-        </div>
         <ul className="menu">
-          <li><a href="">Página Inicial</a></li>
-          <li><a href="">Animes</a></li>
-          <li><a href="">Filmes</a></li>
-          <li><a href="">Jogos</a></li>
-          <li><a href="">Series</a></li>
+          <Link to="/">Pagina Inicial</Link>
+          <Link to="/categoria/animes">Animes</Link>
+          <Link to="/categoria/filmes">Filmes</Link>
+          <Link to="/categoria/jogos">Jogos</Link>
+          <Link to="/categoria/series">Series</Link>
         </ul>
       </nav>
+    </div>
     </header>
   );
 }
-
-export default Header
