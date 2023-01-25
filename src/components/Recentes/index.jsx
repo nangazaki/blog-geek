@@ -1,14 +1,14 @@
-import CardPost from "../CardPost"
+import { CardPost } from "../CardPost"
 
-const Recentes = ({ recentesPosts }) => {
+export const Recentes = ({ recentesPosts }) => {
     return (
         <section className="container">
             <h2>Notícias recentes</h2>
             <div className="recentes">
-                {recentesPosts.map((post, index) => {
+                {recentesPosts.map((post) => {
                     return (
                         <>
-                            <CardPost post={post} key={index} />
+                            <CardPost post={post} key={post.id} />
                         </>
                     )
                 })}
@@ -16,5 +16,3 @@ const Recentes = ({ recentesPosts }) => {
         </section>
     )
 }
-
-export default Recentes

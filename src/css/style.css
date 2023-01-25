@@ -427,6 +427,20 @@ h2 {
   line-height: 1.575em;
   margin-bottom: 16px;
 }
+.relacionados {
+  margin-bottom: 120px;
+}
+.relacionados header h2 {
+  font-family: "Rubik";
+  font-size: 1.75em;
+  line-height: 1.925em;
+  margin-bottom: 24px;
+}
+.relacionados .ler-tambem {
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .newsletter {
   display: flex;
   flex-direction: row;

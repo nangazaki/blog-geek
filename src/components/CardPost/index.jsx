@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-const CardPost = ({ post }) => {
-
+export const CardPost = ({ post }) => {
     const link = post.titulo.toLowerCase().replace(/[ ]+/g, '-')
 
     return (
@@ -19,5 +18,3 @@ const CardPost = ({ post }) => {
         </div>
     );
 }
-
-export default CardPost

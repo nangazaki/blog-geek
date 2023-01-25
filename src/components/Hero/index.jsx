@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Hero = ({ heroPosts }) => {
-
+export const Hero = ({ heroPosts }) => {
     const links = heroPosts.map((post) => post.titulo.toLowerCase().replace(/[ ]+/g, '-'))
 
     return (
@@ -52,5 +51,3 @@ const Hero = ({ heroPosts }) => {
         </section>
     );
 }
-
-export default Hero;

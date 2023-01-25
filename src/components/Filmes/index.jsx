@@ -1,14 +1,14 @@
-import CardPost from "../CardPost"
+import { CardPost } from "../CardPost"
 
-const Filmes = ({ filmesPosts }) => {
+export const Filmes = ({ filmesPosts }) => {
     return (
         <section className="container">
             <h2>Filmes</h2>
             <div className="filmes">
-                {filmesPosts.map((post, index) => {
+                {filmesPosts.map((post) => {
                     return (
                         <>
-                            <CardPost post={post} key={index} />
+                            <CardPost post={post} key={post.id} />
                         </>
                     )
                 })}
@@ -17,4 +17,3 @@ const Filmes = ({ filmesPosts }) => {
     )
 }
 
-export default Filmes

@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import api from "../service";
-import Footer from "../components/Footer";
+
+import { Footer } from "../components/Footer";
 import { Relacionados } from "../components/Relacionados";
 
-const PostView = () => {
+export const PostView = () => {
 
   const [visible, setVisible] = useState(false)
   const [post, setPost] = useState()
@@ -37,10 +39,14 @@ const PostView = () => {
                 <img src={post.capa} alt={post.titulo} className="imagem" />
               </div>
               <div className="corpo">
-                  <p>{`${post.corpo}`}</p>
+                {post.corpo.map((p) => {
+                  return <>
+                    <p>{p}</p>
+                  </>
+                })}
               </div>
               <div className="tag">
-                <p>#Animes</p>
+                <p>#{post.categoria}</p>
               </div>
             </article>
           </section>
@@ -51,5 +57,3 @@ const PostView = () => {
     </>
   );
 }
-
-export default PostView;

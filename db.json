@@ -1,6 +1,5 @@
 {
-  "postagens": [
-    {
+  "postagens": [{
       "id": 1,
       "titulo": "Attack on Titan: Temporada final estreia em março",
       "descricao": "A quarta e última temporada de Attack on Titan vai estrear no dia 4 de março de 2023 e será lançada em duas tranches, com a segunda parte a...",
@@ -8,8 +7,12 @@
       "categoria": "Animes",
       "autor": "Nangazaki44",
       "destaque": false,
-      "corpo": "Após o anúncio /n terceira parte da temporada final de Attack on Titan (Shingeki no Kyojin) deixou os fãs do anime muito mais hypados que antes, todos estão ansiosos para ver o desfecho da grande e já eleito (top 1 dos animes) história de Hajime Isayama.</p> <h3>História do Animes/Manngá</h3> <p>Os novos episódios de Attack on Titan devem adaptar os nove capítulos restantes do mangá e concluir a história de acordo com a visão original de Isayama. Segundo o estúdio Mappa, esses serão, de fato, os últimos episódios do anime, então podemos, enfim, esperar uma conclusão à saga.</p> <p>Spoilers moderados: Com as alianças forjadas, é hora da guerra. A ameaça de Eren Yeager e o Titã Fundador é iminente e difíceis decisões precisam ser tomadas.</p>",
-      "data" : ""
+      "corpo": ["Após o anúncio terceira parte da temporada final de Attack on Titan (Shingeki no Kyojin) deixou os fãs do anime muito mais hypados que antes, todos estão ansiosos para ver o desfecho da grande e já eleito (top 1 dos animes) história de Hajime Isayama.",
+        "História do Animes/Manngá",
+        "Os novos episódios de Attack on Titan devem adaptar os nove capítulos restantes do mangá e concluir a história de acordo com a visão original de Isayama. Segundo o estúdio Mappa, esses serão, de fato, os últimos episódios do anime, então podemos, enfim, esperar uma conclusão à saga.",
+        "Spoilers moderados: Com as alianças forjadas, é hora da guerra. A ameaça de Eren Yeager e o Titã Fundador é iminente e difíceis decisões precisam ser tomadas."
+      ],
+      "data": ""
     },
     {
       "id": 6,
@@ -19,21 +22,27 @@
       "categoria": "Series",
       "autor": "",
       "destaque": true,
-      "corpo": "",
-      "data" : ""
+      "corpo": ["The Last of Us é a nova série de drama em futuro apocalítico da HBO Max, apontada como a melhor adaptação de um jogo para as telas pela crítica. Seu primeiro episódio foi disponibilizado neste domingo (15) no canal de TV a cabo e na plataforma de streaming. Baseada no jogo homônimo lançado em 2013 para PlayStation 3 (PS3), a produção televisiva se debruça sobre a história de sobrevivência de Joel (Pedro Pascal) e Ellie (Bella Ramsay) em um mundo devastado por uma praga fúngica que transforma as pessoas em criaturas violentas e canibais.",
+        "A série é uma das mais esperadas do ano e vem atiçando o público por conta do cuidado ao reproduzir cenários, diálogos e personagens. Isso sem mencionar o envolvimento de nomes de peso como Neil Druckmann, roteirista do game e vice-presidente da empresa responsável pelo jogo, e Craig Mazin, vencedor do Emmy de Melhor Roteiro por Chernobyl. Mas essa combinação será o suficiente para criar uma série capaz de agradar os fãs do jogo e trazer novos espectadores? Veja, a seguir, uma análise sobre como a série de The Last of Us pretende expandir o universo do game, sendo ao mesmo tempo interessante para os fãs e inovadora para quem chega neste mundo."
+      ],
+      "data": ""
     },
     {
       "id": 3,
       "titulo": "Netflix revela data de estreia da segunda temporada de Vinland Saga",
-      "descricao": "Vinland Saga chega com sua segunda temporada na Netflix. ... da era de ascensão do Rei Canuto, o Grande II e uma trama de vingança viking.",
+      "descricao": "O brutal Vinland Saga irá estrear sua segunda temporada na Netflix no início de 2023, dando início as estreias de anime do ano no streaming.",
       "capa": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2021/07/Vinland-Saga-Season-2-e1625659396193.png?resize=696%2C391&ssl=1",
       "categoria": "Animes",
       "autor": "Nangazaki44",
       "destaque": true,
-      "corpo": "Após /n o anúncio terceira parte da temporada final de Attack on Titan (Shingeki no Kyojin) deixou os fãs do anime muito mais hypados que antes, todos estão ansiosos para ver o desfecho da grande e já eleito (top 1 dos animes) história de Hajime Isayama. /n <h3>História do Animes/Manngá</h3> <p>Os novos episódios de Attack on Titan devem adaptar os nove capítulos restantes do mangá e concluir a história de acordo com a visão original de Isayama. Segundo o estúdio Mappa, esses serão, de fato, os últimos episódios do anime, então podemos, enfim, esperar uma conclusão à saga.</p> <p>Spoilers moderados: Com as alianças forjadas, é hora da guerra. A ameaça de Eren Yeager e o Titã Fundador é iminente e difíceis decisões precisam ser tomadas.</p>",
-      "data" : ""
+      "corpo": ["A primeira temporada de Vinland Saga terminou de forma bastante desesperadora para seu protagonista Thorfinn, deixando os fãs ansiosos e angustiados para os novos episódios. Após um longo tempo de espera, finalmente a Netflix revelou a data de estreia da segunda temporada do anime, que chegará a plataforma mês que vem, junto com sua estreia na Crunchyroll. A nova temporada de Vinland Saga estreia na Netflix no dia 9 de janeiro, dando início aos novos animes do ano de 2023 do streaming.",
+        "O anime de Makoto Yukimura será adaptado pelo estúdio MAPPA, de Chainsaw Man, Jujutsu Kaisen, The God of High School, Dororo e Dorohedoro. Previamente, foi responsabilidade do Wit Studio, também muito conhecido pelas 3 temporadas de Attack on Titan. Porém, os direitos foram adquiridos pelo MAPPA.",
+        "Por sua vez, a direção fica por conta de Shuhei Yabuta, de Inuyashiki, com história de Hiroshi Seko, de Banana Fish, e design de personagens de Takahiko Abiru, de Hunter x Hunter.",
+        "Vinland Saga começou a ser publicado na Weekly Shonen da Kodansha em abril de 2005 e inspirou uma adaptação de anime de 24 episódios produzidos pelo Wit Studio, lançados em julho de 2019. Agora, a 2ª temporada será feita pelo MAPPA e chamada de Vinland Saga 2."
+      ],
+      "data": ""
     },
-    
+
     {
       "id": 2,
       "titulo": "Jujutsu Kaisen – 2ª temporada do anime tem data de estreia confirmada",
@@ -42,19 +51,28 @@
       "categoria": "Animes",
       "autor": "Nangazaki44",
       "destaque": false,
-      "corpo": "<p>Após o anúncio terceira parte da temporada final de Attack on Titan (Shingeki no Kyojin) deixou os fãs do anime muito mais hypados que antes, todos estão ansiosos para ver o desfecho da grande e já eleito (top 1 dos animes) história de Hajime Isayama.</p> <h3>História do Animes/Manngá</h3> <p>Os novos episódios de Attack on Titan devem adaptar os nove capítulos restantes do mangá e concluir a história de acordo com a visão original de Isayama. Segundo o estúdio Mappa, esses serão, de fato, os últimos episódios do anime, então podemos, enfim, esperar uma conclusão à saga.</p> <p>Spoilers moderados: Com as alianças forjadas, é hora da guerra. A ameaça de Eren Yeager e o Titã Fundador é iminente e difíceis decisões precisam ser tomadas.</p>",
-      "data" : ""
+      "corpo": ["A equipe de produção do anime Jujutsu Kaisen confirmou a segunda temporada para 2023. O retorno ainda não tem data definida.",
+        "Na primeira temporada, para salvar uma amiga,  o jovem Yuji Itadori acaba comendo o que não devia e se torna hospedeiro da maior maldição de todas. A partir desse momento a vida dele muda completamente e ele passa a integrar a escola para feiticeiros Jujutsu. Com seus colegas Nobara Kugisaki e Megumi Fushiguro, e o professor Satoru Gojo, Yuji passa a lutar contra inimigos tenebrosos.",
+        "A primeira temporada de Jujutsu Kaisen está disponível na Crunchyroll, enquanto o mangá escrito o Gege Akutami é publicado no Brasil pela Panini. O filme Jujutsu Kaisen 0 deve chegar aos cinemas brasileiros nos próximos meses."
+      ],
+      "data": ""
     },
     {
       "id": 7,
       "titulo": "God of War Ragnarok recebe atualização de lançamento com mais de 160 correções",
-      "descricao": "",
+      "descricao": "Porém, a Santa Monica Studio incentiva instalar a atualização Day 1 com mais de 160 correções importantes no PlayStation 4 e PlayStation 5. A...",
       "capa": "https://t2.tudocdn.net/644004?w=1920",
       "categoria": "Jogos",
       "autor": "",
       "destaque": false,
-      "corpo": "",
-      "data" : ""
+      "corpo": [
+        "A desenvolvedora também detalhou tudo o que a atualização corrige e apesar de não serem spoilers importantes, revela o nome de missões, criaturas e algumas habilidades.",
+        "Em seu perfil oficial no Twitter, o Santa Monica Studio incentivou os jogadores a instalarem a atualização de lançamento para que os jogadores tenham a melhor experiência possível no lançamento de God of War Ragnarok.",
+        "A instalação de atualizações de lançamento nos videogames atuais não é algo incomum e geralmente, passa despercebida pelas correções serem discretas. No caso de God of War Ragnarok, alguns problemas poderão frustrar os jogadores e por isso, é bom baixar o patch antes de experienciar a aventura.",
+        "Há correções em diversas categorias, como diálogos, opções de acessibilidade, mixagem de áudio e principalmente bugs que podem afetar o andamento de missões da história e secundárias, além de consertar o problema do loot de inimigos mortos cair em lugares inacessíveis.",
+        "God of War Ragnarok é a sequência do jogo de 2018 e ocorre três anos após sua conclusão. Kratos e Atreus precisam lutar para impedir o Ragnarok, o fim do mundo da mitologia nórdica, enquanto Asgard se prepara para a guerra. Anteriormente, o Santa Monica Studio disse que o jogo será a conclusão da saga nórdica de Kratos, mas não deu detalhes sobre o futuro."
+      ],
+      "data": ""
     },
     {
       "id": 11,
@@ -65,7 +83,7 @@
       "autor": "",
       "destaque": false,
       "corpo": "",
-      "data" : ""
+      "data": ""
     },
     {
       "id": 5,
@@ -76,7 +94,7 @@
       "autor": "Nangazaki44",
       "destaque": false,
       "corpo": "",
-      "data" : ""
+      "data": ""
     },
     {
       "id": 4,
@@ -87,7 +105,7 @@
       "autor": "Nangazaki44",
       "destaque": false,
       "corpo": "<p>Primeiramente, já percebemos que a história precisou se ajustar com a idade dos atores, que agora já são adultos, além da necessidade de um ajuste com o público que assiste, o que possibilitou a inclusão de itens como: maior violência e sangue nas cenas, a inserção de Argyle na história e de temas como drogas, além de um roteiro mais complexo.</p> <p>A quarta temporada inicia a história mostrando a nova Eleven, agora sem poderes e que sofre com bullying na escola, mas também podemos compreender como seus poderes surgiram, além de descobrir que o Vecna é o número 1 e toda a sua história. A principal resposta que esperávamos nessa nova temporada era saber como Hopper sobreviveu ao último episódio da terceira temporada, isso a série nos entregou, mas também dividiu a narrativa em três grupos, dois grupos dos amigos de Hawkins e um grupo de Hopper e Joyce.</p>",
-      "data" : ""
+      "data": ""
     },
     {
       "id": 9,
@@ -98,18 +116,21 @@
       "autor": "",
       "destaque": false,
       "corpo": "",
-      "data" : ""
+      "data": ""
     },
     {
       "id": 8,
       "titulo": "Call of Duty: Modern Warfare 2 fecha 2022 como o jogo mais vendido nos EUA",
-      "descricao": "",
+      "descricao": "Top 10 jogos mais vendido em 2022 nos EUA · 1 - Call of Duty: Modern Warfare II · 2 - Elden Ring · 3 - Madden NFL 23 · 4 - God of War Ragnarok · 5 -...",
       "capa": "https://www.muycomputer.com/wp-content/uploads/2022/08/Call-of-Duty-en-2023-1.jpg",
       "categoria": "Jogos",
-      "autor": "",
+      "autor": "Helder Cambuta",
       "destaque": false,
-      "corpo": "",
-      "data" : ""
+      "corpo": [
+        "A franquia Call of Duty segue rumo ao topo da lista dos jogos que mais venderam na história, e a chegada de Call of Duty: Modern Warfare 2 alavancou ainda mais a franquia. De acordo com a empresa de pesquisa de mercado, NPD Group, o mais recente título da Activision Blizzard fechou 2022 em primeiro lugar em vendas nos EUA, deixando Elden Ring para trás.",
+        "O relatório de dezembro mostra que Call of Duty: Modern Warfare 2 já se posicionava como o título mais vendido no mercado de games americano, feito que se iniciou em novembro, os dois únicos meses inteiros em que o jogo esteve disponível até agora, já que ele foi lançado em 27 de outubro."
+      ],
+      "data": ""
     },
     {
       "id": 10,
@@ -117,10 +138,10 @@
       "descricao": "Letitia Wright assumiu o manto do Pantera Negra na continuação do filme de 2018, Pantera Negra: Wakanda Para Sempre, lançado em novembro do...",
       "capa": "https://thenerdstash.com/wp-content/uploads/2022/03/black-panther-filming.jpg",
       "categoria": "Filmes",
-      "autor": "",
+      "autor": "Helder Cambuta",
       "destaque": true,
       "corpo": "",
-      "data" : ""
+      "data": ""
     }
   ],
   "newsletter": [{

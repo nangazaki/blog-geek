@@ -1,8 +1,9 @@
+import { useState } from "react";
 
-const Footer = () => {
+export const Footer = () => {
+  const [email, setEmail] = useState('')
 
   function newsletter() {
-    let email = document.querySelector('input')
     console.log(email.value)
   }
 
@@ -16,6 +17,7 @@ const Footer = () => {
             <div className="form">
               <input type="email" placeholder="Insira o teu e-mail..." />
               <button onClick={newsletter}>Cadastrar</button>
+              {email}
             </div>
           </div>
         </div>
@@ -28,5 +30,3 @@ const Footer = () => {
     </>
   );
 }
-
-export default Footer

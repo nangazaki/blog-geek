@@ -1,6 +1,6 @@
 import { CardJogos } from "../CardJogos"
 
-const Jogos = ({ jogosPosts }) => {
+export const Jogos = ({ jogosPosts }) => {
   return (
     <section className="container">
       <h2>Jogos</h2>
@@ -16,5 +16,3 @@ const Jogos = ({ jogosPosts }) => {
     </section>
   )
 }
-
-export default Jogos

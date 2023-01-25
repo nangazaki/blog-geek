@@ -7,7 +7,7 @@ import Animes from "./pages/Animes"
 import Filmes from "./pages/Filmes"
 import Jogos from "./pages/Jogos"
 import Series from "./pages/Series"
-import PostView from "./pages/PostView"
+import { PostView } from "./pages/PostView"
 
 function App() {
 
