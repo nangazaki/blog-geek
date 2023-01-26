@@ -1,19 +1,23 @@
+import { Container, Titulo } from "../../style"
 import { CardPost } from "../CardPost"
+import { FilmesContainer } from "./style"
 
 export const Filmes = ({ filmesPosts }) => {
-    return (
-        <section className="container">
-            <h2>Filmes</h2>
-            <div className="filmes">
-                {filmesPosts.map((post) => {
-                    return (
-                        <>
-                            <CardPost post={post} key={post.id} />
-                        </>
-                    )
-                })}
-            </div>
-        </section>
-    )
+  return (
+    <section>
+      <Container>
+        <Titulo>Filmes</Titulo>
+        <FilmesContainer>
+          {filmesPosts.map((post) => {
+            return (
+              <>
+                <CardPost post={post} key={post.id} />
+              </>
+            )
+          })}
+        </FilmesContainer>
+      </Container>
+    </section>
+  )
 }
 

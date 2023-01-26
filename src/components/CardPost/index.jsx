@@ -1,20 +1,24 @@
 import { Link } from "react-router-dom";
 
-export const CardPost = ({ post }) => {
-    const link = post.titulo.toLowerCase().replace(/[ ]+/g, '-')
+import { CardPostContainer, ImgContainer, Titulo, Detalhes, Descricao, LinkPost } from "./style";
 
-    return (
-        <div className="card-post">
-            <div className="">
-                <img src={post.capa} alt={post.titulo} />
-            </div>
-            <div className="detalhes">
-                <Link to={`post/${post.id}/${link}`}>
-                    <h3>{post.titulo}</h3>
-                </Link>
-                <p>{post.descricao}</p>
-                <Link to={`post/${post.id}/${link}`}>Ler mais &gt; </Link>
-            </div>
-        </div>
-    );
+export const CardPost = ({ post }) => {
+  const link = post.titulo.toLowerCase().replace(/[ ]+/g, '-')
+
+  return (
+    <CardPostContainer>
+      <ImgContainer>
+        <img src={post.capa} alt={post.titulo} />
+      </ImgContainer>
+      <Detalhes>
+        <Link to={`post/${post.id}/${link}`}>
+          <Titulo>{post.titulo}</Titulo>
+        </Link>
+        <Descricao>{post.descricao}</Descricao>
+        <Link to={`post/${post.id}/${link}`}>
+          <LinkPost>Ler mais &gt;</LinkPost>
+        </Link>
+      </Detalhes>
+    </CardPostContainer>
+  );
 }

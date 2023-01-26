@@ -1,10 +1,13 @@
 import { CardPost } from "../CardPost"
 
+import { Container, Titulo } from "../../style"
+import { RecentesContainer } from "./style"
+
 export const Recentes = ({ recentesPosts }) => {
     return (
-        <section className="container">
-            <h2>Notícias recentes</h2>
-            <div className="recentes">
+        <Container>
+            <Titulo>Notícias recentes</Titulo>
+            <RecentesContainer>
                 {recentesPosts.map((post) => {
                     return (
                         <>
@@ -12,7 +15,7 @@ export const Recentes = ({ recentesPosts }) => {
                         </>
                     )
                 })}
-            </div>
-        </section>
+            </RecentesContainer>
+        </Container>
     )
 }

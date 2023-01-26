@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
 
+import { CardJogosContainer, Detalhes, Titulo, Gradient } from "./style";
+
 export const CardJogos = ({ post }) => {
 
   const link = post.titulo.toLowerCase().replace(/[ ]+/g, '-')
 
   return (
-    <div className="card-jogos">
-      <div className="gradient"></div>
+    <CardJogosContainer>
+      <Gradient />
       <img src={post.capa} alt="" />
-      <div className="detalhes">
+      <Detalhes>
         <Link to={`/post/${post.id}/${link}`}>
-          <h3>{post.titulo}</h3>
+          <Titulo>{post.titulo}</Titulo>
         </Link>
-      </div>
-    </div>
+      </Detalhes>
+    </CardJogosContainer>
   );
 }

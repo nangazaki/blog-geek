@@ -1,18 +1,22 @@
+import { Container, Titulo } from "../../style"
 import { CardPost } from "../CardPost"
+import { SeriesContainer } from "./style"
 
 export const Series = ({ seriesPosts }) => {
   return (
-    <section className="container">
-      <h2>Series</h2>
-      <div className="series">
-        {seriesPosts.map((post) => {
-          return (
-            <>
-              <CardPost post={post} key={post.id} />
-            </>
-          )
-        })}
-      </div>
+    <section>
+      <Container>
+        <Titulo>Series</Titulo>
+        <SeriesContainer>
+          {seriesPosts.map((post) => {
+            return (
+              <>
+                <CardPost post={post} key={post.id} />
+              </>
+            )
+          })}
+        </SeriesContainer>
+      </Container>
     </section>
   )
 }

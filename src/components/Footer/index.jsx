@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import { Container } from "../../style"
+import { Button, FooterContainer, FooterText, Form, Input, LadoDireito, Newsletter, Span, Titulo } from "./style";
+
 export const Footer = () => {
   const [email, setEmail] = useState('')
 
@@ -9,24 +12,26 @@ export const Footer = () => {
 
   return (
     <>
-      <section className="container">
-        <div className="newsletter">
-          <h2>Quer ser avisado sobre as novas postagens do Blog?</h2>
-          <div className="lado-direito">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.</span>
-            <div className="form">
-              <input type="email" placeholder="Insira o teu e-mail..." />
-              <button onClick={newsletter}>Cadastrar</button>
-              {email}
-            </div>
-          </div>
-        </div>
+      <section>
+        <Container>
+          <Newsletter>
+            <Titulo>Quer ser avisado sobre as novas postagens do Blog?</Titulo>
+            <LadoDireito>
+              <Span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.</Span>
+              <Form>
+                <Input type="email" placeholder="Insira o teu e-mail..." />
+                <Button onClick={newsletter}>Cadastrar</Button>
+                {email}
+              </Form>
+            </LadoDireito>
+          </Newsletter>
+        </Container>
       </section>
-      <footer>
-        <div className="container">
-          <p>Copyright © 2023 <a href="https://www.linkedin.com/in/helder-cambuta-81668a192/">Helder Cambuta</a>. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+      <FooterContainer>
+        <Container>
+          <FooterText>Copyright © 2023 <a href="https://www.linkedin.com/in/helder-cambuta-81668a192/">Helder Cambuta</a>. Todos os direitos reservados.</FooterText>
+        </Container>
+      </FooterContainer>
     </>
   );
 }

@@ -1,10 +1,12 @@
 import { CardPost } from "../CardPost"
+import { Container, Titulo } from "../../style"
+import { AnimesContainer } from "./style"
 
 export const Animes = ({ animesPosts }) => {
   return (
-    <section className="container">
-      <h2>Animes</h2>
-      <div className="animes">
+    <Container>
+      <Titulo>Animes</Titulo>
+      <AnimesContainer>
         {animesPosts.map((post) => {
           return (
             <>
@@ -12,8 +14,8 @@ export const Animes = ({ animesPosts }) => {
             </>
           )
         })}
-      </div>
-    </section>
+      </AnimesContainer>
+    </Container>
   )
 }
 

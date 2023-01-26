@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import api from "../../service";
+import { Container } from "../../style";
 import { CardJogos } from "../CardJogos";
+import { LerTambem, RelacionadosContainer, Titulo } from "./style";
 
 export const Relacionados = () => {
 
@@ -22,24 +24,29 @@ export const Relacionados = () => {
 
   return (
     <>
-      <section className="container relacionados">
-        <header>
-          <h2>Leia também...</h2>
-        </header>
-        <div className="flex-between ler-tambem">
-          <>
-            {visible && (
-              <>
-                {relacionados.map((post) => {
-                  return <>
-                    <CardJogos post={post} key={post.id} />
-                  </>
-                })}
-              </>
-            )}
-          </>
+      <section>
+        <Container>
+          <RelacionadosContainer>
 
-        </div>
+            <header>
+              <Titulo>Leia também...</Titulo>
+            </header>
+            <LerTambem>
+              <>
+                {visible && (
+                  <>
+                    {relacionados.map((post) => {
+                      return <>
+                        <CardJogos post={post} key={post.id} />
+                      </>
+                    })}
+                  </>
+                )}
+              </>
+
+            </LerTambem>
+          </RelacionadosContainer>
+        </Container>
       </section>
     </>
   );
