@@ -57,7 +57,7 @@ const Input = styled.input`
 const Button = styled.button`
   width: 160px;
   height: 40px;
-  background: linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%);
+  background: ${({ theme }) => theme.cores.primaria};
   border-radius: 4px;
   border: none;
   font-family: 'Rubik';
@@ -76,10 +76,19 @@ const FooterContainer = styled.footer`
 `; 
 
 const FooterText = styled.p`
-  color: $branco-escuro;
+  color: #f2f2f2;
   font-size: 18px;
   font-family: 'Ubuntu';
   font-weight: 300;
+  
+  a {
+    color: #f2f2f2;
+    
+    &:hover {
+      transition: .5 ease-in;
+      color: #3A7BD5;
+    }
+  }
 `;
 
 export { Newsletter, Titulo, LadoDireito, Span, Form, Input, Button, FooterContainer, FooterText }

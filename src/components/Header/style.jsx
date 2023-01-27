@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.header`
+export const HeaderContainer = styled.header`
   width: 100%;
   height: 80px;
   display: flex;
@@ -9,7 +9,7 @@ const Container = styled.header`
   margin-bottom: 60px;
 `;
 
-const Navbar = {
+export const Navbar = {
   Container: styled.nav`
     width: 100%;
     max-width: 1280px;
@@ -23,19 +23,17 @@ const Navbar = {
   Menu: styled.ul`
   display: flex;
   gap: 14px;
-`,
 
-  Item: styled.span`
+  a {
+    font-size: 1.125em;
     font-family: 'Rubik';
-    color: #f2f2f2;
+    color: ${({ theme }) => theme.cores.brancaPadrao};
     padding: 6px;
     transition: .4s ease-in;
 
     &:hover {
-      color: #1DA7EA;
+      color: ${({ theme }) => theme.cores.primaria};
     }
-  `,
+  }
+`,
 }
-
-
-export { Container, Navbar }

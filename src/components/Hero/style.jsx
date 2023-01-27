@@ -14,6 +14,10 @@ const HeroSection = {
     gap: 24px;
     margin-bottom: 80px;
 
+    a {
+      font-size: 1.125em;
+    }
+
     @media (max-width: 1140px) {
     display: flex;
     flex-direction: column;
@@ -24,7 +28,7 @@ const HeroSection = {
   HeroCard1: styled.div`
     width: 100%;
     max-height: 600px;
-  `, 
+  `,
 
   HeroCard2: styled.div`
     width: 100%;
@@ -43,9 +47,9 @@ const HeroSection = {
   `,
 
   Tag: styled.span`
-    padding: 6px 14px;
+    padding: 8px 16px;
     border-radius: 4px;
-    background: #1DA7EA;
+    background: linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%);
     color: #fff;
   `,
 
@@ -77,6 +81,6 @@ const HeroSection = {
     }
   `
 }
- 
+
 
 export { Section, HeroSection }

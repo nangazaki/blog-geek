@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Container } from "../../style";
-
+import { ContainerStyled } from "../../GlobalStyle.style";
 import { HeroSection } from "./style";
 
 export const Hero = ({ heroPosts }) => {
@@ -8,7 +7,7 @@ export const Hero = ({ heroPosts }) => {
 
   return (
     <section>
-      <Container>
+      <ContainerStyled>
         <HeroSection.Hero>
           <HeroSection.HeroCard1>
             <HeroSection.Post>
@@ -35,7 +34,7 @@ export const Hero = ({ heroPosts }) => {
               <img src={heroPosts[1].capa} alt={heroPosts[1].titulo} />
               <HeroSection.Descricao>
                 <HeroSection.Tag>
-                  <Link className="tag">{heroPosts[1].categoria}</Link>
+                  <Link>{heroPosts[1].categoria}</Link>
                 </HeroSection.Tag>
                 <div>
                   <Link to={`post/${heroPosts[1].id}/${links[1]}`}>
@@ -49,7 +48,7 @@ export const Hero = ({ heroPosts }) => {
               <img src={heroPosts[2].capa} alt={heroPosts[2].titulo} />
               <HeroSection.Descricao>
                 <HeroSection.Tag>
-                  <Link className="tag">{heroPosts[2].categoria}</Link>
+                  <Link>{heroPosts[2].categoria}</Link>
                 </HeroSection.Tag>
                 <div>
                   <Link to={`post/${heroPosts[2].id}/${links[1]}`}>
@@ -59,9 +58,8 @@ export const Hero = ({ heroPosts }) => {
               </HeroSection.Descricao>
             </HeroSection.Post>
           </HeroSection.HeroCard2>
-
         </HeroSection.Hero>
-      </Container>
+      </ContainerStyled>
     </section>
   );
 }

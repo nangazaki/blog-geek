@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { ContainerStyled } from "../../GlobalStyle.style";
 
-import { Container } from "../../style"
 import { Button, FooterContainer, FooterText, Form, Input, LadoDireito, Newsletter, Span, Titulo } from "./style";
 
 export const Footer = () => {
@@ -13,7 +13,7 @@ export const Footer = () => {
   return (
     <>
       <section>
-        <Container>
+        <ContainerStyled>
           <Newsletter>
             <Titulo>Quer ser avisado sobre as novas postagens do Blog?</Titulo>
             <LadoDireito>
@@ -25,12 +25,12 @@ export const Footer = () => {
               </Form>
             </LadoDireito>
           </Newsletter>
-        </Container>
+        </ContainerStyled>
       </section>
       <FooterContainer>
-        <Container>
+        <ContainerStyled>
           <FooterText>Copyright © 2023 <a href="https://www.linkedin.com/in/helder-cambuta-81668a192/">Helder Cambuta</a>. Todos os direitos reservados.</FooterText>
-        </Container>
+        </ContainerStyled>
       </FooterContainer>
     </>
   );

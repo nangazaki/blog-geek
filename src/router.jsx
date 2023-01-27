@@ -12,10 +12,6 @@ export const Router = () => {
     <>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/categoria/animes" element={<Animes />} />
-        <Route path="/categoria/filmes" element={<Filmes />} />
-        <Route path="/categoria/jogos" element={<Jogos />} />
-        <Route path="/categoria/series" element={<Series />} />
         <Route path="/post/:id/:title" element={<PostView />} />
       </Routes>
     </>

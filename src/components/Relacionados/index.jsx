@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
+import { ContainerStyled, CardGroup } from "../../GlobalStyle.style";
 import api from "../../service";
-import { Container } from "../../style";
 import { CardJogos } from "../CardJogos";
-import { LerTambem, RelacionadosContainer, Titulo } from "./style";
 
 export const Relacionados = () => {
 
@@ -25,13 +24,12 @@ export const Relacionados = () => {
   return (
     <>
       <section>
-        <Container>
-          <RelacionadosContainer>
-
+        <ContainerStyled>
+          <div>
             <header>
-              <Titulo>Leia também...</Titulo>
+              <h2>Leia também...</h2>
             </header>
-            <LerTambem>
+            <CardGroup>
               <>
                 {visible && (
                   <>
@@ -43,10 +41,9 @@ export const Relacionados = () => {
                   </>
                 )}
               </>
-
-            </LerTambem>
-          </RelacionadosContainer>
-        </Container>
+            </CardGroup>
+          </div>
+        </ContainerStyled>
       </section>
     </>
   );

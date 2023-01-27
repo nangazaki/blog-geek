@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CardPostContainer = styled.div`
+export const CardPostContainer = styled.div`
   max-width: 380px;
   width: 100%;
   height: 480px;
@@ -9,21 +9,21 @@ const CardPostContainer = styled.div`
   background-color: #18181815;
 `;
 
-const ImgContainer = styled.div`
+export const ImgContainer = styled.div`
   height: 220px;
 `;
 
-const Detalhes = styled.div`
+export const Detalhes = styled.div`
   padding: 16px;
-`;  
+`;
 
-const Titulo = styled.h3`
+export const Titulo = styled.h3`
   font-size: 1.375em;
-  line-height: 130%;
+  line-height: 120%;
   margin-bottom: 14px;
 `;
 
-const Descricao = styled.p`
+export const Descricao = styled.p`
   font-family: 'Ubuntu';
   line-height: 140%;
   font-weight: 300;
@@ -31,11 +31,8 @@ const Descricao = styled.p`
   color: #ABABAB;
 `;
 
-const LinkPost = styled.span`
+export const LinkPost = styled.span`
   font-family: 'Rubik';
   font-size: 1em;
-  color: #1DA7EA;
+  color: ${({ theme }) => theme.cores.primaria};
 `;
-
-
-export { CardPostContainer, ImgContainer, Detalhes, Titulo, Descricao, LinkPost }

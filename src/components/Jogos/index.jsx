@@ -1,13 +1,12 @@
+import { CardGroup, ContainerStyled } from "../../GlobalStyle.style"
 import { CardJogos } from "../CardJogos"
-import { Container, Titulo } from "../../style"
-import { JogosContainer } from "./style"
 
 export const Jogos = ({ jogosPosts }) => {
   return (
     <section>
-      <Container>
-        <Titulo>Jogos</Titulo>
-        <JogosContainer>
+      <ContainerStyled>
+        <h2>Jogos</h2>
+        <CardGroup>
           {jogosPosts.map((post, index) => {
             return (
               <>
@@ -15,8 +14,8 @@ export const Jogos = ({ jogosPosts }) => {
               </>
             )
           })}
-        </JogosContainer>
-      </Container>
+        </CardGroup>
+      </ContainerStyled>
     </section>
   )
 }

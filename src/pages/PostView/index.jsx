@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../../service";
-
-import { Autor, Data, PostContainer, PostCorpo, PostHeader, PostImagem, PostTitulo, Wrapper } from "./style";
 import { Footer } from "../../components/Footer";
 import { Relacionados } from "../../components/Relacionados";
+import { Autor, Data, PostContainer, 
+         PostCorpo, PostHeader, PostImagem, PostTitulo, Wrapper 
+        } from "./style";
 
 export const PostView = () => {
 

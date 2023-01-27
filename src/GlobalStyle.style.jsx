@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { theme } from "./Theme";
 
-const CSSReset = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 *,
 *::before,
 *::after {
@@ -18,7 +19,7 @@ const CSSReset = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1DA7EA;
+  background-color: ${({ theme }) => theme.cores.primaria};
   border-radius: 4px;
 }
 
@@ -61,19 +62,30 @@ h6 {
     font-weight: 400;
     font-stretch: condensed;
 }
+
+h1 {
+  font-size: 2.25em;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 2em;
+  line-height: 130%;
+}
 `;
 
-const Container = styled.div`
-width: 100%;
+export const ContainerStyled = styled.div`
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
 `;
 
-const Titulo = styled.h2`
-  font-family: Rubik;
-  font-size: 2.25em;
-  line-height: 2.475em;
+export const CardGroup = styled.div`
+  margin-top: 16px;
+  margin-bottom: 80px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `;
-
-export { CSSReset, Container, Titulo }

@@ -1,13 +1,11 @@
+import { CardGroup, ContainerStyled } from "../../GlobalStyle.style"
 import { CardPost } from "../CardPost"
-
-import { Container, Titulo } from "../../style"
-import { RecentesContainer } from "./style"
 
 export const Recentes = ({ recentesPosts }) => {
     return (
-        <Container>
-            <Titulo>Notícias recentes</Titulo>
-            <RecentesContainer>
+        <ContainerStyled>
+            <h2>Notícias recentes</h2>
+            <CardGroup>
                 {recentesPosts.map((post) => {
                     return (
                         <>
@@ -15,7 +13,7 @@ export const Recentes = ({ recentesPosts }) => {
                         </>
                     )
                 })}
-            </RecentesContainer>
-        </Container>
+            </CardGroup>
+        </ContainerStyled>
     )
 }

@@ -1,13 +1,12 @@
-import { Container, Titulo } from "../../style"
+import { CardGroup, ContainerStyled } from "../../GlobalStyle.style"
 import { CardPost } from "../CardPost"
-import { FilmesContainer } from "./style"
 
 export const Filmes = ({ filmesPosts }) => {
   return (
     <section>
-      <Container>
-        <Titulo>Filmes</Titulo>
-        <FilmesContainer>
+      <ContainerStyled>
+        <h2>Filmes</h2>
+        <CardGroup>
           {filmesPosts.map((post) => {
             return (
               <>
@@ -15,8 +14,8 @@ export const Filmes = ({ filmesPosts }) => {
               </>
             )
           })}
-        </FilmesContainer>
-      </Container>
+        </CardGroup>
+      </ContainerStyled>
     </section>
   )
 }
