@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { ContainerStyled, CardGroup } from "../../GlobalStyle.style";
 import api from "../../service";
 import { CardJogos } from "../CardJogos";
+import { ContainerStyled, CardGroup } from "../../style/global/global";
 
 export const Relacionados = () => {
-
   const [relacionados, setRelacionados] = useState([])
   const [visible, setVisible] = useState(false)
 

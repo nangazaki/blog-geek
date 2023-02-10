@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import api from "."
+import api from "./index"
 
 const useAPI = (url) => {
   const [hero, setHero] = useState()

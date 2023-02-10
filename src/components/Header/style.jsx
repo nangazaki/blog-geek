@@ -25,14 +25,14 @@ export const Navbar = {
   gap: 14px;
 
   a {
-    font-size: 1.125em;
-    font-family: 'Rubik';
-    color: ${({ theme }) => theme.cores.brancaPadrao};
     padding: 6px;
+    font-size: 18px;
     transition: .4s ease-in;
+    color: ${({ theme }) => theme.colors['base-white']};
+    font-family: ${({ theme }) => theme.fonts['title']};
 
     &:hover {
-      color: ${({ theme }) => theme.cores.primaria};
+      color: ${({ theme }) => theme.colors['blue']};
     }
   }
 `,

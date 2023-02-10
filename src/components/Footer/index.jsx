@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ContainerStyled } from "../../GlobalStyle.style";
+import { ContainerStyled } from "../../style/global/global";
 
 import { Button, FooterContainer, FooterText, Form, Input, LadoDireito, Newsletter, Span, Titulo } from "./style";
 

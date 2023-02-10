@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const PostContainer = styled.article`
+export const PostContainer = styled.article`
   max-width: 900px;
   width: 100%;
   padding: 0 24px;
@@ -8,27 +8,23 @@ const PostContainer = styled.article`
   margin-bottom: 80px;
 `;
 
-const PostHeader = styled.header`
+export const PostHeader = styled.header`
   margin-bottom: 32px;
 `;
 
-const PostTitulo = styled.h1`
-  font-family: Rubik;
-  font-size: 2.25em;
-  line-height: 2.475em;
-  line-height: 110%;
+export const PostTitulo = styled.h1`
   color: #f8f8f8;
   margin-bottom: 40px;
 `;
 
-const Data = styled.span`
+export const Data = styled.span`
   color: #ABABAB;
 `;
 
-const Autor = styled.p`
+export const Autor = styled.p`
 `;
 
-const PostImagem = styled.img`
+export const PostImagem = styled.img`
   width: 100%;
   border-radius: 8px;
   background-color: $azul-normal;
@@ -36,18 +32,16 @@ const PostImagem = styled.img`
   overflow: hidden;
 `;
 
-const PostCorpo = styled.p`
+export const PostCorpo = styled.p`
   color: #ababab;
-  font-family: Ubuntu;
   font-weight: 300;
-  font-size: 1.125em;
-  line-height: 1.575em;
   margin-bottom: 16px;
+  line-height: 1.575em;
+  font-family: ${({ theme }) => theme.fonts['body']};
+  font-size: ${({ theme }) => theme.fontSizes['text-lg']};
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-
-export { PostContainer, PostHeader, PostTitulo, Data, Autor, PostImagem, PostCorpo, Wrapper }

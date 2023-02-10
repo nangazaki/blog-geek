@@ -18,21 +18,22 @@ export const Detalhes = styled.div`
 `;
 
 export const Titulo = styled.h3`
-  font-size: 1.375em;
   line-height: 120%;
+  font-size: ${({ theme }) => theme.fontSizes['title-sm']};
   margin-bottom: 14px;
 `;
 
 export const Descricao = styled.p`
-  font-family: 'Ubuntu';
-  line-height: 140%;
-  font-weight: 300;
-  margin-bottom: 18px;
   color: #ABABAB;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 18px;
+  font-family: ${({ theme }) => theme.fonts['body']};
+  font-family: ${({ theme }) => theme.fontSizes['text-lg']};
 `;
 
 export const LinkPost = styled.span`
-  font-family: 'Rubik';
-  font-size: 1em;
-  color: ${({ theme }) => theme.cores.primaria};
+  font-family: ${({ theme }) => theme.fonts['title']};
+  font-size: ${({ theme }) => theme.fontSizes['text-md']};
+  color: ${({ theme }) => theme.colors['blue']};
 `;

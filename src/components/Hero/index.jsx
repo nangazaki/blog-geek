@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { ContainerStyled } from "../../GlobalStyle.style";
 import { HeroSection } from "./style";
+import { ContainerStyled } from "../../style/global/global";
 
 export const Hero = ({ heroPosts }) => {
   const links = heroPosts.map((post) => post.titulo.toLowerCase().replace(/[ ]+/g, '-'))

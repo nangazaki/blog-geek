@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { theme } from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
 *,
@@ -19,8 +18,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: ${({ theme }) => theme.cores.primaria};
   border-radius: 4px;
+  background-color: ${({ theme }) => theme.colors['blue']};
 }
 
 ::-moz-selection {
@@ -35,14 +34,14 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   width: 100%;
-  background-color: #050607;
-  color: #f2f2f2;
-  font-family: "Ubuntu";
+  font-family: ${({ theme }) => theme.fonts['body']};
+  color: ${({ theme }) => theme.colors['base-white']};
+  background-color: ${({ theme }) => theme.colors['base-background']};
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: ${({ theme }) => theme.colors['base-pure-white']};
 }
 
 img {
@@ -57,35 +56,43 @@ h3,
 h4,
 h5,
 h6 {
-    color: #f2f2f2;
-    font-family: 'Rubik';
     font-weight: 400;
     font-stretch: condensed;
+    color: ${({ theme }) => theme.colors['base-white']};
+    font-family: ${({ theme }) => theme.fonts['title']};
 }
 
 h1 {
-  font-size: 2.25em;
   line-height: 110%;
   margin-bottom: 40px;
+  font-size: ${({ theme }) => theme.fontSizes['title-2xl']};
 }
 h2 {
-  font-size: 2em;
+  font-size: ${({ theme }) => theme.fontSizes['title-xl']};
   line-height: 130%;
 }
 `;
 
 export const ContainerStyled = styled.div`
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
+  max-width: 1280px;
 `;
 
 export const CardGroup = styled.div`
+  display: flex;
   margin-top: 16px;
   margin-bottom: 80px;
-  display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
   justify-content: space-around;
+`;
+
+export const Loader = styled.div`
+  width: 100%;
+  height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

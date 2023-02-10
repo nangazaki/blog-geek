@@ -2,21 +2,20 @@ import styled from "styled-components";
 
 const Newsletter = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 80px;
-`; 
+`;
 
 const Titulo = styled.h2`
-  font-family: Rubik;
+  font-family: ${({ theme }) => theme.fonts['title']};
   font-size: 1.875em;
   line-height: 2.0625em;
   line-height: 110%;
   max-width: 450px;
 `;
-  
+
 const LadoDireito = styled.div`
   max-width: calc(50% - 16px);
     
@@ -27,7 +26,7 @@ const LadoDireito = styled.div`
 
 const Span = styled.span`
   display: block;
-  font-family: 'Ubuntu';
+  font-family: ${({ theme }) => theme.fonts['body']};
   font-size: 1em;
   font-weight: 300;
   line-height: 150%;
@@ -48,7 +47,7 @@ const Input = styled.input`
   border-radius: 4px;
   border: none;
   padding: 8px 16px;
-  font-family: 'Ubuntu';
+  font-family: ${({ theme }) => theme.fonts['body']};
   font-size: 1em;
   font-weight: 300;
   color: #585858;
@@ -57,10 +56,10 @@ const Input = styled.input`
 const Button = styled.button`
   width: 160px;
   height: 40px;
-  background: ${({ theme }) => theme.cores.primaria};
+  background: ${({ theme }) => theme.colors['blue']};
   border-radius: 4px;
   border: none;
-  font-family: 'Rubik';
+  font-family: ${({ theme }) => theme.fonts['title']};
   font-size: 18px;
   font-weight: 400;
   color: #f8f8f8;
@@ -73,12 +72,12 @@ const FooterContainer = styled.footer`
   width: 100%;
   height: 80px;
   background: #0F0F0F;
-`; 
+`;
 
 const FooterText = styled.p`
   color: #f2f2f2;
   font-size: 18px;
-  font-family: 'Ubuntu';
+  font-family: ${({ theme }) => theme.fonts['body']};
   font-weight: 300;
   
   a {
@@ -86,7 +85,7 @@ const FooterText = styled.p`
     
     &:hover {
       transition: .5 ease-in;
-      color: #3A7BD5;
+      color: ${({ theme }) => theme.colors['blue']};
     }
   }
 `;

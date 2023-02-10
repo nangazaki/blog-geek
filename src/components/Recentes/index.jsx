@@ -1,5 +1,5 @@
-import { CardGroup, ContainerStyled } from "../../GlobalStyle.style"
 import { CardPost } from "../CardPost"
+import { CardGroup, ContainerStyled } from "../../style/global/global"
 
 export const Recentes = ({ recentesPosts }) => {
     return (

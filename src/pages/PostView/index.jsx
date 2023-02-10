@@ -1,17 +1,19 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
 import api from "../../service";
+import { useEffect, useState } from "react";
+import { ClipLoader } from "react-spinners";
+import { useTheme } from "styled-components";
+import { useParams } from "react-router-dom";
 import { Footer } from "../../components/Footer";
+import { Loader } from "../../style/global/global";
 import { Relacionados } from "../../components/Relacionados";
-import { Autor, Data, PostContainer, 
-         PostCorpo, PostHeader, PostImagem, PostTitulo, Wrapper 
-        } from "./style";
+import { Autor, Data, PostContainer, PostCorpo, PostHeader, PostImagem, PostTitulo, Wrapper } from "./style";
 
 export const PostView = () => {
-
-  const [visible, setVisible] = useState(false)
+  const theme = useTheme()
+  const params = useParams(undefined)
   const [post, setPost] = useState()
-  const params = useParams()
+  const [loading, setLoading] = useState(true)
+
 
   useEffect(() => {
     api.get(`/postagens/${params.id}`).then((response) => {
@@ -19,42 +21,43 @@ export const PostView = () => {
     })
   }, [])
 
-  setTimeout(() => {
-    setVisible(true)
-  }, 1000)
-
   return (
     <>
-      {visible && (
-        <>
-          <section>
-            <PostContainer>
-              <PostHeader>
-                <PostTitulo>{post.titulo}</PostTitulo>
-                <Wrapper>
-                  <Autor>Autor: <span>{post.autor}</span></Autor>
-                  <Data>18 de Dezembro de 2022</Data>
-                </Wrapper>
-              </PostHeader>
-              <div>
-                <PostImagem src={post.capa} alt={post.titulo} />
-              </div>
-              <div>
-                {post.corpo.map((p) => {
-                  return <>
-                    <PostCorpo>{p}</PostCorpo>
-                  </>
-                })}
-              </div>
-              <div>
-                <p>#{post.categoria}</p>
-              </div>
-            </PostContainer>
-          </section>
-          <Relacionados />
-          <Footer />
-        </>
-      )}
+      {
+        post ? (
+          <>
+            <section>
+              <PostContainer>
+                <PostHeader>
+                  <PostTitulo>{post.titulo}</PostTitulo>
+                  <Wrapper>
+                    <Autor>Autor: <span>{post.autor}</span></Autor>
+                    <Data>18 de Dezembro de 2022</Data>
+                  </Wrapper>
+                </PostHeader>
+                <div>
+                  <PostImagem src={post.capa} alt={post.titulo} />
+                </div>
+                <div>
+                  {post.corpo.map((paragraphs) => {
+                    return <>
+                      <PostCorpo>{paragraphs}</PostCorpo>
+                    </>
+                  })}
+                </div>
+                <div>
+                  <p>#{post.categoria}</p>
+                </div>
+              </PostContainer>
+            </section>
+            <Relacionados />
+            <Footer />
+          </>
+        ) : (
+          <Loader>
+            <ClipLoader color={theme.colors['blue']} loading={loading} size={150} />
+          </Loader>
+        )}
     </>
   );
 }

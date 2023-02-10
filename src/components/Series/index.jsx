@@ -1,4 +1,4 @@
-import { CardGroup, ContainerStyled } from "../../GlobalStyle.style"
+import { CardGroup, ContainerStyled } from "../../style/global/global"
 import { CardPost } from "../CardPost"
 
 export const Series = ({ seriesPosts }) => {
